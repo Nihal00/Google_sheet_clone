@@ -32,6 +32,25 @@ ul{
 }
 
 .active{
-    background-color: #fff;
+    background-color: #eee;
     color: #0fc30f;
+}
+
+/* tools selection  */
+.tool-section{
+    display: flex;
+    background-color: #eee;
+    height: 3rem;
+    align-items: center;
+}
+
+.inner-tools{
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+.tool{
+    padding: 0.5rem;
+    cursor: pointer;
 }
