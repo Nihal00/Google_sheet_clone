@@ -1,18 +1,22 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     font-size: 62.5%;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-.header-tab{
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 900, "GRAD" 0, "opsz" 48;
+}
+
+.header-tab {
     background-color: #0fc30f;
     font-size: 1.2rem;
     color: #fff;
@@ -20,37 +24,47 @@ ul{
     height: 10vh;
 }
 
-.tab{
+.tab {
     display: flex;
     padding: 1.5rem;
     width: 22rem;
     justify-content: space-between;
 }
 
-.tab > li{
+.tab > li {
     padding: 0.5rem;
 }
 
-.active{
+.active {
     background-color: #eee;
     color: #0fc30f;
 }
 
 /* tools selection  */
-.tool-section{
+.tool-section {
     display: flex;
     background-color: #eee;
     height: 3rem;
     align-items: center;
 }
 
-.inner-tools{
+.inner-tools {
     display: flex;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     align-items: center;
 }
 
-.tool{
+.tool {
     padding: 0.5rem;
     cursor: pointer;
+}
+
+#font-styling,
+#font-sizing {
+    padding: 0.2rem;
+}
+
+.tools:hover {
+    background-color: #dad4d48a;
+    border-radius: 0.5rem;
 }
