@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+:root{
+    --light-black: #eee;
+}
 
 body {
     font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
 }
 
 ul {
@@ -20,13 +27,12 @@ ul {
     background-color: #0fc30f;
     font-size: 1.2rem;
     color: #fff;
-    width: 100wh;
-    height: 10vh;
+    height: 4rem;
 }
 
 .tab {
     display: flex;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0;
     width: 22rem;
     justify-content: space-between;
 }
@@ -36,14 +42,15 @@ ul {
 }
 
 .active {
-    background-color: #eee;
+    background-color: var(--light-black);
     color: #0fc30f;
+    height: 3rem;
 }
 
 /* tools selection  */
 .tool-section {
     display: flex;
-    background-color: #eee;
+    background-color: var(--light-black);
     height: 3rem;
     align-items: center;
 }
@@ -67,4 +74,41 @@ ul {
 .tools:hover {
     background-color: #dad4d48a;
     border-radius: 0.5rem;
+}
+
+/* cell data section */
+.cell-data{
+    display: flex;
+    align-items: center;
+    background-color: var(--light-black);
+    /* border: 1px solid; */
+    height: 2rem;
+}
+
+.cell-positon{
+    background-color: #fff;
+    width: 5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.1rem;
+    margin-left: 1rem;
+}
+
+.fx{
+    width: 2.5rem;
+    height: 1.5rem;
+    font-family: serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.1rem;
+}
+
+.cell-data-display{
+    background-color: #fff;
+    height: 1.5rem;
+    
+    width: calc(100vw - 3rem);
 }
